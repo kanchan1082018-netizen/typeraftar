@@ -2383,7 +2383,7 @@ function initExercises() {
         resetTest();
 
         let fetchLang = (currentLang === 'hi_kruti') ? 'hi_mangal' : currentLang;
-baseExerciseText = getExerciseText(currentStage, fetchLang, currentLessonNumber);
+baseExerciseText = getExerciseText(currentStage, fetchLang, currentLessonNumber, currentExamSelection);
 
 baseExerciseText = (baseExerciseText || '').normalize('NFC');
 if (currentLang === 'hi_kruti') {
